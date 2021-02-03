@@ -1,10 +1,10 @@
 import React from "react"
 
-function ListItem({title,controls}) {
+function ListItem({title,children}) {
     
-    return (<li>
+    return (<li className="list__item todo__list-item">
               {title}
-              {controls}
+              {children}
             </li>)
 }
 

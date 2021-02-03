@@ -1,0 +1,56 @@
+.header{
+    background-color: var(--primary);
+    padding: 15px;
+    box-shadow: 0 3px 3px var(--shadow-color);
+}
+
+.todo__list{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.todo__list-item{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todo__form{
+    display: flex;
+    align-items: flex-end;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 16px;
+}
+
+.todo__flex-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.todo__button{
+    margin-left: 8px;
+}
+
+
+@media screen and(max-width: 500px){
+    .todo__form{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .todo__button{
+        margin-left: 0;
+    }
+
+    .todo__text-input{
+      display: block;
+      width: 100%;
+      margin-bottom: 8px;
+    }
+}
+

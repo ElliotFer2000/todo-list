@@ -10,7 +10,7 @@ function Button({title,events}) {
        }
     }
 
-    return (<button onClick={onClick}>
+    return (<button onClick={onClick} className="button todo__button">
               {title}
             </button>)
 }

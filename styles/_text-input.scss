@@ -1,0 +1,8 @@
+.text-input{
+    padding: 8px 16px;
+    border: none;
+
+    &:focus{
+        outline: 2px dotted var(--primary);
+    }
+}

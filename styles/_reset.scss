@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: #d2d3d6;
+}
+
+h1{
+    color: white;
+    font-size: 24px;
+    font-family: 'Arvo', serif;
+    text-align: center;
+}
+
+li,p,label,span,button{
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
