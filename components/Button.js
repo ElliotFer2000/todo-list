@@ -1,10 +1,11 @@
 import React from "react"
 
-function Button({title,events}) {
-    
+function Button({title,clickHandlers}) {
+
     function onClick(event){
-       if(events){
-        events.forEach(handler => {
+       event.preventDefault()
+       if(clickHandlers){
+        clickHandlers.forEach(handler => {
             handler(event)
         });
        }

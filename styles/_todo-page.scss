@@ -12,6 +12,7 @@
 .todo__list-item{
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 8px;
 }
 
 .todo__form{
@@ -36,6 +37,13 @@
     margin-left: 8px;
 }
 
+.todo__finished{
+   text-decoration: line-through;
+}
+
+.todo__label{
+    margin-right: 8px;
+}
 
 @media screen and(max-width: 500px){
     .todo__form{

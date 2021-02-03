@@ -17,7 +17,9 @@ function AppStore(
     this.dispatch = (function (actionKey, payload) {
         
         if (this.actions[actionKey]) {
+            
             this.actions[actionKey](this, payload)
+            
             this.eventManager.publish('toDosChanged',this.state)
             return true
         }

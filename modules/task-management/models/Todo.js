@@ -1,5 +1,6 @@
-function Todo(title) {
+function ToDo(title,state) {
     this.title = title
-}
+    this.state = state
+} 
 
-export default Todo
+export default ToDo

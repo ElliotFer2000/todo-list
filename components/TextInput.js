@@ -3,7 +3,7 @@ import React from "react"
 
 function TextInput({label,id}) {
     return (<div>
-              <label for={id} className="label">{label}</label>
+              <label htmlFor={id} className="label todo__label">{label}</label>
               <input type="text" id={id} className="text-input todo__text-input"/>
             </div>)
 }

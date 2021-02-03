@@ -1,14 +1,18 @@
 const mutations = {
     addToDoItem(store, payload) {
-        store.state.push(payload)
+        store.state = [...store.state,payload]
     },
 
     deleteToDoItem(store, payload) {
         store.state.splice(payload, 1)
+        console.log("Deleting")
+        store.state = [...store.state]
     },
     
     markToDoItemAsFinished(store, payload) {
-        store.state[payload].state = 'finished'
+        console.log("Marking")
+        store.state[payload].state = !store.state[payload].state
+        store.state = [...store.state]
     }
 }
 
