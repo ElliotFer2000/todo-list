@@ -8,22 +8,20 @@ function AppStore(
     acts,
     muts,
     st
-) {  
-    this.actions = acts 
+) {
+    this.actions = acts
     this.mutations = muts
-    this.state = st 
+    this.state = st
     this.eventManager = new PubSub()
-   
+
     this.dispatch = (function (actionKey, payload) {
-        
+
         if (this.actions[actionKey]) {
-            
             this.actions[actionKey](this, payload)
-            
-            this.eventManager.publish('toDosChanged',this.state)
+            this.eventManager.publish('toDosChanged', this.state)
             return true
         }
-        
+
     }).bind(this);
 
     this.commit = (function (mutationKey, payload) {
@@ -35,6 +33,6 @@ function AppStore(
 
 }
 
-const appStore = new AppStore(actions,mutations,state)
+const appStore = new AppStore(actions, mutations, state)
 
 export default appStore
